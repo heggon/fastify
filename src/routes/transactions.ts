@@ -16,7 +16,7 @@ export async function transactionsRoutes(app: FastifyInstance) { //TODO PLUGIN P
       const { sessionId } = request.cookies
 
       const transactions = await knex('transactions')
-        .where('session_Id', sessionId)
+        .where('session_id', sessionId)
         .select()
 
       return { transactions }

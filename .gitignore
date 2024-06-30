@@ -1,0 +1,12 @@
+# Dependecies
+node_modules
+
+# Database Ignora todos arquivos .db
+db/*.db
+
+# Environment
+.env
+.env.test
+
+# Build
+dist
